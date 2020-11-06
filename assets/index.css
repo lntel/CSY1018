@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    backdrop-filter: blur(6px);
+    background: #00000044;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3em;
+}
+
+.header__hello {
+    color: var(--white);
+    font-size: 3em;
+    font-weight: 400;
+    animation: slideIn .6s ease-in;
+}
+
+.header__fullname {
+    color: var(--primary);
+    font-size: 4em;
+    font-weight: 400;
+    animation: slideIn 1s ease-in;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
