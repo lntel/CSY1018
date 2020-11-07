@@ -41,13 +41,12 @@
     border-bottom: .4em solid var(--white);
     z-index: 1;
     display: none;
-    border-radius: .2em;
 }
 
 .opennav::after {
     content: '';
     position: absolute;
-    top: .35em;
+    top: .33em;
     width: 100%;
     height: .4em;
     background: var(--white);
@@ -70,7 +69,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background: var(--darker);
+        background: var(--darkest);
         z-index: 1;
         transform: translateY(-100vh);
         transition: transform .3s ease-out;
