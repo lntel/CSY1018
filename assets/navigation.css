@@ -3,6 +3,16 @@
     box-shadow: 0 6px 2px rgba(0, 0, 0, .2);
 }
 
+#mobile__navigation > a {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    color: var(--erroneous);
+}
+
 #desktop__navigation ul {
     display: flex;
     flex-direction: row;
