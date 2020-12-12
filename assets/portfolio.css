@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-#csy1014__module:target, #csy1017__module:target {
+#csy1014__module:target, #csy1017__module:target, #csy1018__module:target {
     transform: translateX(0);
 }
 
@@ -83,26 +83,32 @@ body {
 
 #csy1014 {
     background: linear-gradient(#000000a9, #00000080), url('./images/systems.jpg') no-repeat center / cover;
+    animation: fadeIn .3s ease-in;
 }
 
 #csy1017 {
     background: linear-gradient(#000000a9, #00000080), url('./images/communication.jpg') no-repeat center / cover;
+    animation: fadeIn .6s ease-in;
 }
 
 #csy1018 {
     background: linear-gradient(#000000a9, #00000080), url('./images/webdev.jpg') no-repeat center / cover;
+    animation: fadeIn .9s ease-in;
 }
 
 #csy1019 {
     background: linear-gradient(#000000a9, #00000080), url('./images/software.jpg') no-repeat center / cover;
+    animation: fadeIn 1.2s ease-in;
 }
 
 #csy1020 {
     background: linear-gradient(#000000a9, #00000080), url('./images/problemsolving.jpg') no-repeat center / cover;
+    animation: fadeIn 1.5s ease-in;
 }
 
 #csy1026 {
     background: linear-gradient(#000000a9, #00000080), url('./images/databases.jpg') no-repeat center / cover;
+    animation: fadeIn 1.8s ease-in;
 }
 
 @media screen and (max-width: 1000px) {
