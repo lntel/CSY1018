@@ -73,6 +73,8 @@ main {
 }
 
 .personal__information {
+    display: flex;
+    flex-direction: column;
     padding: 2em;
     animation: fadeIn 1.3s ease-in;
 }
@@ -87,7 +89,7 @@ main {
     margin: 0 .7em;
 }
 
-.personal__information__header {
+.personal__information > h1 {
     font-weight: 400;
     color: var(--white);
     margin: 0 0 .5em 0;
@@ -99,6 +101,48 @@ main {
     padding: 0 0 3em 0;
 }
 
+.personal__information__split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin: 2em 0 0 0;
+    flex: 1;
+}
+
+.personal__information__split > section > div > h3 {
+    font-weight: 400;
+    font-size: 1.1em;
+    color: var(--base);
+}
+
+.personal__information__split > section > div > h3 > span {
+    font-weight: 600;
+}
+
+.personal__information__split > section > div > span {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: var(--dark);
+}
+
+.personal__information__split > section > div > p {
+    color: var(--white);
+    margin: 1em 0 0 0;
+}
+
+.personal__information__split > section > div > ul {
+    margin: 1em 0 0 2em;
+    color: var(--white);
+    width: 90%;
+}
+
+.personal__information__split > section > h2 {
+    color: var(--primary);
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+
 @keyframes slideInFromLeft {
     from {
         transform: translateX(-100vw);
@@ -106,16 +150,6 @@ main {
 
     to {
         transform: translateX(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }
 
@@ -132,5 +166,14 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .selfie {
+        height: 100vh;
+    }
+
+    .personal__information__split {
+        display: flex;
+        flex-direction: column;
     }
 }
