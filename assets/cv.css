@@ -125,9 +125,10 @@ main {
     color: var(--dark);
 }
 
-.personal__information__split > section > div > p {
+.personal__information__split > section > div > div {
     color: var(--white);
-    margin: 1em 0 0 0;
+    margin: 1em 0;
+    width: 90%;
 }
 
 .personal__information__split > section > div > ul {
@@ -170,6 +171,10 @@ main {
 
     .selfie {
         height: 100vh;
+    }
+
+    .personal__information__split > section > div > div {
+        width: 100%;
     }
 
     .personal__information__split {
