@@ -1,3 +1,82 @@
 body {
     background: var(--darkest);
 }
+
+.report-container {
+    width: 100%;
+    height: calc(100vh - 6em);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.report {
+    width: 50%;
+    height: 100%;
+    background: var(--darker);
+    overflow: auto;
+    padding: 2em;
+    
+    border-radius: .2em;
+}
+
+.report::-webkit-scrollbar {
+    width: 7px;
+}
+
+.report::-webkit-scrollbar-track {
+    background: var(--dark);
+    border-radius: .5em;
+}
+
+.report::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5em;
+}
+
+.report > h1 {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0 0 .2em 0;
+}
+
+.report > p {
+    color: var(--white);
+    margin: 0 0 1em 0;
+}
+
+.report > ol:first-of-type {
+    margin: 1em 0 0 0;
+}
+
+.report > ol:first-of-type li a {
+    text-decoration: none;
+    color: var(--base);
+    transition: color .3s ease-in-out;
+}
+
+.report > ol:first-of-type  a:hover {
+    color: var(--primary);
+}
+
+.report > ol {
+    color: var(--white);
+    list-style: none;
+}
+
+.report > ol > li {
+    margin: 0 0 1em 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .report-container {
+        height: 100%;
+        padding: 1em;
+    }
+
+    .report {
+        width: 100%;
+    }
+}
