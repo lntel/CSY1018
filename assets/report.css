@@ -2,22 +2,25 @@ body {
     background: var(--darkest);
 }
 
-.report-container {
-    width: 100%;
-    height: calc(100vh - 6em);
-    display: flex;
-    justify-content: center;
-    padding: 1em 0;
-}
-
 .report {
     width: 50%;
-    height: 100%;
+    height: calc(100vh - 7em);
     background: var(--darker);
     overflow: auto;
     padding: 2em;
+    margin: 1em auto;
     
     border-radius: .2em;
+}
+
+.report > img {
+    width: 50%;
+    border-radius: .2em;
+}
+
+.report > figcaption {
+    color: var(--white);
+    margin: .2em 0 1em 0;
 }
 
 .report::-webkit-scrollbar {
@@ -41,10 +44,29 @@ body {
     margin: 0 0 .2em 0;
 }
 
+.report > h2 {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0 0 .2em 0;
+}
+
 .report > p {
     color: var(--white);
     margin: 0 0 1em 0;
-    white-space: pre-line;
+    width: 100%;
+}
+
+.report > p > .break {
+    content: '';
+    display: block;
+    background: #000;
+    margin: 1em 0 0 0;
+}
+
+.report > p > a {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 .validation-container {
@@ -69,7 +91,7 @@ body {
 }
 
 .validation-result > figcaption {
-    color: var(--primary);
+    color: var(--white);
     margin: .2em 0 0 0;
 }
 
@@ -99,12 +121,12 @@ body {
 
 @media screen and (max-width: 1000px) {
 
-    .report-container {
-        height: 100%;
-        padding: 1em;
+    .report {
+        width: 90vw;
+        height: 96vh;
     }
 
-    .report {
-        width: 100%;
+    .validation-container {
+        grid-template-columns: 1fr;
     }
 }
