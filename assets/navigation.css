@@ -13,13 +13,16 @@
     color: var(--erroneous);
 }
 
+#desktop__navigation {
+    padding: 2em 0;
+    background: var(--darker);
+}
+
 #desktop__navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    background: var(--darker);
-    padding: 2em 0;
 }
 
 #desktop__navigation ul li a {
