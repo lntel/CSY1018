@@ -1,5 +1,7 @@
 body {
     background: var(--darkest);
+    display: grid;
+    grid-template-rows: 9% 91% 9%;
 }
 
 .report {
@@ -115,12 +117,21 @@ body {
     list-style: none;
 }
 
-.report > ol > li {
+.report > ol li {
     margin: 0 0 1em 0;
     word-wrap: break-word;
 }
 
+.report > ol > ol {
+    list-style: none;
+    margin: 0 0 1em 1em;
+}
+
 @media screen and (max-width: 1000px) {
+
+    body {
+        display: block;
+    }
 
     .report {
         width: 90vw;

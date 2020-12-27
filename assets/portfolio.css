@@ -1,5 +1,7 @@
 body {
     background: var(--darkest);
+    display: grid;
+    grid-template-rows: 9% 91% 9%;
 }
 
 #modules {
@@ -109,6 +111,11 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
+    body {
+        display: block;
+    }
+
     #modules {
         height: 100vh;
         padding: 0;

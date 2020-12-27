@@ -1,5 +1,7 @@
 body {
     background: #222;
+    display: grid;
+    grid-template-rows: 9% 91% 9%;
 }
 
 .content {
@@ -85,6 +87,7 @@ body {
 
     body {
         height: 200vh;
+        display: block;
     }
 
     body > iframe {

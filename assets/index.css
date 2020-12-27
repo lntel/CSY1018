@@ -1,5 +1,6 @@
 body {
-    
+    display: grid;
+    grid-template-rows: 9% 91% 9%;
     height: 100vh;
     overflow: auto;
 }
@@ -7,7 +8,6 @@ body {
 .header {
     background: #363636d2;
     width: 100%;
-    height: calc(100% - 4em);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -46,6 +46,11 @@ video {
 }
 
 @media screen and (max-width: 1000px) {
+
+    body {
+        display: block;
+    }
+
     .header {
         height: 100vh;
     }
