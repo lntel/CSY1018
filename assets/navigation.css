@@ -14,11 +14,15 @@
 }
 
 #desktop__navigation {
-    padding: 2em 0;
+    /* padding: 2em 0; */
     background: var(--darker);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #desktop__navigation ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
