@@ -1,6 +1,7 @@
 body {
     background: var(--darkest);
     display: grid;
+    height: 100vh;
     grid-template-rows: 9% 91% 9%;
 }
 
