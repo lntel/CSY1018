@@ -15,13 +15,13 @@ body {
     border-radius: .2em;
 }
 
-.report > img {
+.report > figure > img {
     width: 50%;
     border-radius: .2em;
     border: 1px solid var(--base);
 }
 
-.report > figcaption {
+.report > figure > figcaption {
     color: var(--white);
     margin: .2em 0 1em 0;
 }
@@ -93,36 +93,45 @@ body {
     flex: 1;
 }
 
-.validation-result > figcaption {
+.validation-result figcaption {
     color: var(--white);
     margin: .2em 0 0 0;
 }
 
-.report > ol:first-of-type {
+.report > ul:first-of-type {
     margin: 1em 0 0 0;
 }
 
-.report > ol:first-of-type li a {
+.report > ul:first-of-type li a {
     text-decoration: none;
     color: var(--base);
     transition: color .3s ease-in-out;
 }
 
-.report > ol:first-of-type  a:hover {
+.report > ul:first-of-type  a:hover {
     color: var(--primary);
 }
 
-.report > ol {
+.report .video-demo {
+    margin: 0 0 1em 0;
+}
+
+.report > ul {
     color: var(--white);
     list-style: none;
 }
 
-.report > ol li {
+.report > ul li {
     margin: 0 0 1em 0;
     word-wrap: break-word;
 }
 
-.report > ol > ol {
+.report > ul > li > ul {
+    margin: 0 0 0 1em;
+    list-style: none;
+}
+
+.report > ul > ul {
     list-style: none;
     margin: 0 0 1em 1em;
 }
