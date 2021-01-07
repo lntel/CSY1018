@@ -54,6 +54,12 @@ body {
     margin: 0 0 .2em 0;
 }
 
+.report > h3 {
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--primary);
+}
+
 .report > p {
     color: var(--white);
     margin: 0 0 1em 0;
