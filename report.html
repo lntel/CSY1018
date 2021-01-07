@@ -63,6 +63,9 @@
           <li><a href="#index">Index page</a></li>
           <li><a href="#portfolio">Portfolio page</a></li>
           <li><a href="#mobilenav">Mobile navigation</a></li>
+          <li><a href="#contact">Contact page</a></li>
+          <li><a href="#cv">CV page</a></li>
+          <li><a href="#report">Report page</a></li>
         </ul>
       </li>
       <li><a href="#validate">File validation</a></li>
@@ -73,6 +76,7 @@
         </ul>
       </li>
       <li><a href="#demo">Video demonstration</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
       <li><a href="#bib">Bibliography</a></li>
     </ul>
     <h1 id="introduction">Introduction</h1>
@@ -182,7 +186,7 @@
     </p>
     <figure>
       <img src="./assets/images/portfolioFullscreen.PNG" alt="Full screen module information">
-      <figcaption>Figure x - Full screen module element</figcaption>
+      <figcaption>Figure 6 - Full screen module element</figcaption>
     </figure>
     <h2 id="mobilenav">Mobile navigation</h2>
     <p>
@@ -195,7 +199,7 @@
     </p>
     <figure>
       <img src="./assets/images/mobileNavigation.PNG" alt="Mobile navigation design" />
-      <figcaption>Figure 6 - Mobile navigation design</figcaption>
+      <figcaption>Figure 7 - Mobile navigation design</figcaption>
     </figure>
     <p>
       Unlike the desktop navigation, the mobile navigation covers the entirety
@@ -205,6 +209,78 @@
       the exit button here as it is the same position where the burger menu
       icon is located and therefore, would make sense to the user.
     </p>
+    <h2 id="contact">Contact page</h2>
+    <p>
+      For my contact page, I chose to put my contact form on the left side of the page and make it around 20% of the
+      pages width as a massive form would be very excessive and would not be an effective way to fill the space. I was
+      then faced with the dilema of what I would put in the empty space of the page, this is when I thought about adding
+      a Google map embed as this would fill the page. I searched for the university campus on Google Maps and then
+      embedded it on the page. The embed I used is on line 67 of my contact.html file Google. (2020).
+    </p>
+    <figure>
+      <img src="./assets/images/contactFig.PNG" alt="Contact page">
+      <figcaption>Figure 8 - Contact form design</figcaption>
+    </figure>
+    <p>Furthermore, when I first add the map embed, I realised that the light theme of the map did not fit in with my
+      theme at all and therefore, I used the filter property to invert the colours of the map to make it more dark
+      themed. For the form action, I added code so that when the submit button is clicked, the user's email client will
+      be opened with my email address automatically inserted so that they can contact me.
+    </p>
+    <figure>
+      <img src="./assets/images/formAction.PNG" alt="Form action code">
+      <figcaption>Figure 9 - Form action code</figcaption>
+    </figure>
+    <h2 id="cv">CV page</h2>
+    <p>
+      While I was looking for inspiration I stumbled across a very attractive design TrueThemes. (2020). In figure 10,
+      you can see the design that inspired my own design for my CV page. I placed a picture of myself on the left side
+      of the page with an overlay with my full name, role and additional links to my social media accounts. For the
+      social media links, I added icons Material Design. (2020) which I selected as the icons fit in very well with the
+      purpose of each of the three links.
+    </p>
+    <figure>
+      <img src="./assets/images/niko-resume-cv-website.jpg" alt="CV design inspiration">
+      <figcaption>Figure 10 - CV design inspiration</figcaption>
+    </figure>
+    <p>
+      On the right side of the page, I added all of my information such as my description, work experience and
+      education. I chose to highlight all of the headings using my primary colour as I believe they are important and
+      therefore, deserve the user's attention. I did face one issue on my CV page however, where the footer of the page
+      would seem to float into the middle of the page although, this only happened on mobile. After some time debugging
+      the issue, I deduced that the issue occurred due to the body being 100vh in height, which meant that the footer
+      could not exceed the height. To fix this issue, I set the height of my body to auto only on mobile devices which
+      seemed to resolve my issue.
+    </p>
+    <h2 id="report">Report page</h2>
+    <p>
+      Finally, the report page was the last page I created. Once I had create the base of page (contents, sections,
+      figures and references) it was quite easy to add to the report. When I began, I already knew how I would format
+      the file validation which was within a grid as I could easily resize the grid for different screen resolutions. I
+      wanted to make my report as similar as I possibly could to an actual word document, for this reason, I chose to
+      create a div within my body which would contain all of the report content. This also meant that I could simply set
+      the overflow of the div to auto so that while I added more content to my report, the scroll bar would appear
+      automatically and the user would be able to simply scroll through the report without running into any issues with
+      the footer or other page content.
+    </p>
+    <p>
+      Additionally, I wanted to implement a working table of contents, so I designed a solution in which I use anchor
+      tags for the table of contents and within the href attributes I added the id's of the headers so that when they
+      are clicked, the page would automatically scroll down to the relevant heading with the use of the target selector,
+      this can be seen within figure 11.
+    </p>
+    <figure>
+      <img src="./assets/images/tableOfContentsCode.PNG" alt="Table of contents code">
+      <figcaption>Figure 11 - Table of contents code</figcaption>
+    </figure>
+    <p>
+      Spacing all of the content was an easy task with the use of margins and padding, I added a margin-bottom to my
+      paragraphs to space them apart and so that when I created a new heading, there was enough space between the last
+      paragraph of the previous section and the new heading as seen in figure 12.
+    </p>
+    <figure>
+      <img src="./assets/images/pMargin.PNG" alt="Paragraph margin">
+      <figcaption>Figure 12 - Paragraph margin</figcaption>
+    </figure>
     <h1 id="validate">File validation</h1>
     <p>
       Within this section are the screenshots proving that all of my files
@@ -269,12 +345,15 @@
     <div style="max-width:640px" class="video-demo">
       <div style="position:relative;padding-bottom:65.625%"><iframe id="kmsembed-1_w1frpnqm" width="640" height="420"
           src="https://northampton.mediaspace.kaltura.com/embed/secure/iframe/entryId/1_w1frpnqm/uiConfId/31123441"
-          class="kmsembed" allowfullscreen
-          allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"
-           title="Kaltura Player" style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
+          class="kmsembed" allowfullscreen allow="autoplay *; fullscreen *; encrypted-media *"
+          referrerPolicy="no-referrer-when-downgrade" title="Kaltura Player"
+          style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
     </div>
-    <p>If this IFrame does not work, you can also access the video <a href="https://northampton.mediaspace.kaltura.com/media/Website+recording/1_w1frpnqm">here</a></p>
+    <p>If this IFrame does not work, you can also access the video <a
+        href="https://northampton.mediaspace.kaltura.com/media/Website+recording/1_w1frpnqm">here</a></p>
+    
+    <h1 id="conclusion">Conclusion</h1>
     <h1 id="bib">Bibliography</h1>
     <ul>
       <li>
@@ -313,7 +392,7 @@
         (Accessed: 12th November 2020).
       </li>
       <li>
-        TrueThemes (2020) Niko - <cite>Resume/CV</cite>, Available at:
+        TrueThemes. (2020) <cite>Resume/CV</cite>, Available at:
         <cite>https://n.foxdsgn.com/niko/black/</cite> (Accessed: 3rd December
         2020).
       </li>
