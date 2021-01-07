@@ -41,6 +41,7 @@ main {
     color: var(--white);
     font-size: 2.6em;
     font-weight: 400;
+    text-align: center;
 }
 
 .selfie__links {
