@@ -136,6 +136,20 @@ body {
     margin: 0 0 1em 1em;
 }
 
+.sw-list p {
+    margin: 0 0 1em 1em;
+}
+
+.sw-list li {
+    text-indent: 1em;
+}
+
+.sw-list li::before {
+    color: var(--primary);
+    content: '•';
+    margin: 0 .4em 0 0;
+}
+
 @media screen and (max-width: 1000px) {
 
     body {
